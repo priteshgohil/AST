@@ -1,10 +1,8 @@
 package que3;
 
 import java.util.ArrayList;
-
-public class FunctionValueCalculator 
-{
-	public static void main(String[] args) 
+public class FunctionValueCalculator {
+	public ArrayList<ArrayList> FunctionCalc()
 	{
 		ArrayList FunctionCalculator = new ArrayList<>();
 		ArrayList shallowCopy = new ArrayList<>();
@@ -22,6 +20,6 @@ public class FunctionValueCalculator
 			shallowCopy = new ArrayList<>(FunctionCalculator);
 			mainList.add(shallowCopy);
 		}
-		System.out.println(mainList);
+		return mainList;
 	}
 }
