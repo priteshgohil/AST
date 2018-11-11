@@ -9,6 +9,7 @@ public class Question03Main
 		FunctionValueCalculator obj01 = new FunctionValueCalculator();	
 		CalculatedList = obj01.FunctionCalc();
 		System.out.println(CalculatedList);
+		System.out.println(CalculatedList.get(0));
 	}
 
 }
