@@ -1,7 +1,7 @@
 import numpy as np
 class DataAnalyser:
     def __init__(self, data):
-        self.data = data
+        self.data = [np.random.rand() for i in range(data)]
 
     def sum(self):
         return sum(self.data)
@@ -31,7 +31,7 @@ n2 = input('Enter n2: ')
 n3 = n2 + 1
 while n3 >= n2:
     n3 = input('Enter n3 which is less than n2: ')
-data_analyzer = DataAnalyser([np.random.rand() for i in range(n1)])
+data_analyzer = DataAnalyser(n1)
 print('Sum:', data_analyzer.sum())
 print('Product:', data_analyzer.product())
 print('Average:', data_analyzer.average())
