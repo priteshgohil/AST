@@ -7,10 +7,7 @@ class DataAnalyser:
         return sum(self.data)
 
     def product(self):
-        p = 1
-        for i in self.data:
-            p *= i
-        return p
+	return np.product(self.data)
 
     def average(self):
         return np.average(self.data)
