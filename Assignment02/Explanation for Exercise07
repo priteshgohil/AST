@@ -1,7 +1,7 @@
-2) As the value of the k increases the function value increases because of the value being used while calculating value of I being greater.
+1) As the value of the k increases the function value increases because of the value being used while calculating value of I being greater.
 
-3) The Effeciency of the code can be defined based on the time it takes and How complex the code
+2) The Effeciency of the code can be defined based on the time it takes and How complex the code
 
-    Time complexity is defined in the form of BigO notation. So as per the code written the time complexity is O(n) because of for loop written.
+3) Time complexity is defined in the form of BigO notation. So as per the code written the time complexity is O(n) because of for loop written.
 
     
