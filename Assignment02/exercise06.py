@@ -1,7 +1,7 @@
 import numpy as np
 class DataAnalyser:
     def __init__(self, data):
-        self.data = [np.random.rand() for i in range(data)]
+        self.data = [np.random.rand()*10000 for i in range(data)]
 
     def sum(self):
         return sum(self.data)
