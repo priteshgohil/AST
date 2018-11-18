@@ -24,5 +24,16 @@ class TestFunCalc(unittest.TestCase):
         Val_expec = float(1.1123)
         self.assertTrue((Val - Val_expec) <= 1e-1)
 
+    #testing for Zero input for range
+    def test_FunctionValueForZeroInput(self):
+        Val = self.object_calc.calculate(0,0)
+        self.assertEqual(Val, 0.0)
+
+    #testing for 1 input for range
+    def test_FunctionValueForOneNumber(self):
+        Val = self.object_calc.calculate(0,1)
+        self.assertEqual(Val, 0.5)
+
 if __name__=='__main__':
     unittest.main()
+
