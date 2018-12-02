@@ -1,8 +1,13 @@
 # AST
 Advance Software Technology
 
-1. to compile and run the java file. chnage directorty to the source folder and then give below command.
-Comiple : javac ClassName
-Run: java -classpath . packageName.ClassName
+Programming Language : Python
+Data Structure : User defined data structures using class 
+Testing frame work : Unittest
+Coding standard : PEP8
+Design pattern : S.O.L.I.D
+Naming convention:
+class - uses CapWords Convention
+Function and Variable - uses lowercase words separated by underscore
 
 Note: note that java ClassName will not work because we need to give class path and package name
