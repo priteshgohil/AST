@@ -100,6 +100,8 @@ class TestModularity(unittest.TestCase):
         rgb_data = [ ('scissor', 2, 95), ('fork', 3, 99),('knife', 1, 99)]
         rgbd_data =  [('knife', 1, 88), ('spoon', 4,85), ('scissor', 2, 65), ('fork', 3, 66)]
         dummy = ['z', 'z', 'z']
+        rgbd_data_algo_2 =  [('knife', 1, 65), ('scissor', 2, 68), ('fork', 3, 75),('spoon', 4, 68)]
+        rgb_data_algo_2 = [('knife', 1, 81), ('scissor', 2, 35), ('fork', 3, 88),('spoon', 4, 34)]
         Final_Data = np.vstack((rgb_data,dummy,rgbd_data))
         combi_data = self.Fuseddata.get_most_confident_data(Final_Data)
         self.assertEqual(combi_data,[('knife', 1, 99),('scissor', 2, 95),('fork', 3, 99),('spoon', 4,85)])
