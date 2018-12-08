@@ -55,9 +55,7 @@ class TestModularity(unittest.TestCase):
         rgb_data_algo_2 = [('knife', 1, 65), ('scissor', 2, 68), ('fork', 3, 75),('spoon', 4, 68)]
         rgbd_data_algo_1 =  [('knife', 1, 81), ('scissor', 2, 35), ('fork', 3, 88),('spoon', 4, 34)]
         rgbd_data_algo_2 =  [('knife', 1, 32), ('scissor', 2, 84), ('fork', 3, 65),('spoon', 4, 79)]
-        dummy = ['z', 'z', 'z']
-        Final_Data = np.vstack((rgb_data_algo_1,dummy,rgb_data_algo_2,dummy,rgbd_data_algo_1,dummy,rgbd_data_algo_2))
-        combi_data = self.Fuseddata.get_most_confident_data(Final_Data)
+        combi_data = self.Fuseddata.get_most_confident_data((rgb_data_algo_1,dummy,rgb_data_algo_2,dummy,rgbd_data_algo_1,dummy,rgbd_data_algo_2))
         for object_data in combi_data:
             self.assertTrue(object_data[2] >= 0.0 and object_data[2] <= 100.0)
 
@@ -67,9 +65,7 @@ class TestModularity(unittest.TestCase):
         rgb_data_algo_1 = [('knife', 1, 99), ('scissor', 2, 95), ('fork', 3, 99),('spoon', 4, 98)]
         rgb_data_algo_2 = [('knife', 1, 65), ('scissor', 2, 68), ('fork', 3, 75),('spoon', 4, 68)]
         rgbd_data_algo_1 =  [('knife', 1, 81), ('scissor', 2, 35), ('fork', 3, 88),('spoon', 4, 34)]
-        dummy = ['z', 'z', 'z']
-        Final_Data = np.vstack((rgb_data_algo_1,dummy,rgb_data_algo_2,dummy,rgbd_data_algo_1,dummy,rgbd_data_algo_2))
-        combi_data = self.Fuseddata.get_most_confident_data(Final_Data)
+        combi_data = self.Fuseddata.get_most_confident_data((rgb_data_algo_1,dummy,rgb_data_algo_2,dummy,rgbd_data_algo_1,dummy,rgbd_data_algo_2))
         for object_data in combi_data:
             if object_data[2] >100 and object_data[2] <0:
                 self.assertTrue(True)
@@ -80,9 +76,7 @@ class TestModularity(unittest.TestCase):
         rgbd_data_algo_1 =  [('knife', 1, 88), ('scissor', 2, 65), ('fork', 3, 66),('spoon', 4,85)]
         rgb_data_algo_2 = [('knife', 1, 65), ('scissor', 2, 68), ('fork', 3, 75),('spoon', 4, 68)]
         rgbd_data_algo_2 =  [('knife', 1, 81), ('scissor', 2, 35), ('fork', 3, 88),('spoon', 4, 34)]
-        dummy = ['z', 'z', 'z']
-        Final_Data = np.vstack((rgb_data,dummy,rgbd_data))
-        combi_data = self.Fuseddata.get_most_confident_data(Final_Data)
+        combi_data = self.Fuseddata.get_most_confident_data((rgb_data_algo_1,dummy,rgb_data_algo_2,dummy,rgbd_data_algo_1,dummy,rgbd_data_algo_2))
         self.assertEqual(combi_data,[('knife', 1, 99),('scissor', 2, 95),('fork', 3, 99),('spoon', 4,85)])
 
     #if size of two input list doesnt match throw an error.
@@ -91,21 +85,16 @@ class TestModularity(unittest.TestCase):
         rgbd_data =  [('knife', 1, 88), ('scissor', 2, 65), ('fork', 3, 66),('spoon', 4,85)]
         rgbd_data_algo_2 =  [('knife', 1, 65), ('scissor', 2, 68), ('fork', 3, 75),('spoon', 4, 68)]
         rgb_data_algo_2 = [('scissor', 2, 95), ('fork', 3, 99),('knife', 1, 99)]
-        dummy = ['z', 'z', 'z']
-        Final_Data = np.vstack((rgb_data,dummy,rgbd_data))
-        combi_data = self.Fuseddata.get_most_confident_data(Final_Data)
+        combi_data = self.Fuseddata.get_most_confident_data((rgb_data_algo_1,dummy,rgb_data_algo_2,dummy,rgbd_data_algo_1,dummy,rgbd_data_algo_2))
         self.assertEqual(combi_data,[('knife', 1, 99),('scissor', 2, 95),('fork', 3, 99),('spoon', 4,85)])
 
     def test_unsorted_list(self):
-        rgb_data = [ ('scissor', 2, 95), ('fork', 3, 99),('knife', 1, 99)]
+        rgb_data = [ ('scissor', 2, 95), ('fork', 3, 99),('knife', 1, 34)]
         rgbd_data =  [('knife', 1, 88), ('spoon', 4,85), ('scissor', 2, 65), ('fork', 3, 66)]
-        dummy = ['z', 'z', 'z']
         rgbd_data_algo_2 =  [('knife', 1, 65), ('scissor', 2, 68), ('fork', 3, 75),('spoon', 4, 68)]
-        rgb_data_algo_2 = [('knife', 1, 81), ('scissor', 2, 35), ('fork', 3, 88),('spoon', 4, 34)]
-        Final_Data = np.vstack((rgb_data,dummy,rgbd_data))
-        combi_data = self.Fuseddata.get_most_confident_data(Final_Data)
-        self.assertEqual(combi_data,[('knife', 1, 99),('scissor', 2, 95),('fork', 3, 99),('spoon', 4,85)])
-
+        rgb_data_algo_2 = [('knife', 1, 81), ('scissor', 2, 35), ('fork', 3, 88),('spoon', 4, 99)]
+        combi_data = self.Fuseddata.get_most_confident_data((rgb_data_algo_1,dummy,rgb_data_algo_2,dummy,rgbd_data_algo_1,dummy,rgbd_data_algo_2))
+        self.assertEqual(combi_data,[('knife', 1, 88),('scissor', 2, 95),('fork', 3, 88),('spoon', 4,99)])
 
 
 if __name__ == '__main__':
