@@ -5,7 +5,7 @@ import numpy as np
 class TestModularity(unittest.TestCase):
 
     def setUp(self):
-        self.Fuseddata = requirement1.FusionOfList()
+        self.Fuseddata = requirement2.FusionOfList()
 
     #Test total number of object in the final result
     def test_numberof_objects(self):
@@ -13,16 +13,13 @@ class TestModularity(unittest.TestCase):
         rgb_data_algo_2 = [('knife', 1, 65), ('scissor', 2, 23), ('fork', 3, 48)]
         rgbd_data_algo_1 =  [('knife', 1, 68), ('scissor', 2, 53), ('fork', 3, 46)]
         rgbd_data_algo_2 =  [('knife', 1, 86), ('scissor', 2, 27), ('fork', 3, 84)]
-        dummy = ['z', 'z', 'z']
-        Final_Data = np.vstack((rgb_data_algo_1,dummy,rgb_data_algo_2,dummy,rgbd_data_algo_1,dummy,rgbd_data_algo_2))
-        combi_data = self.Fuseddata.get_most_confident_data(Final_Data)
+        combi_data = self.Fuseddata.get_most_confident_data((rgb_data_algo_1,dummy,rgb_data_algo_2,dummy,rgbd_data_algo_1,dummy,rgbd_data_algo_2))
         self.assertEqual(len(combi_data),3)
         rgb_data_algo_1 = [('knife', 1, 81), ('scissor', 2, 35), ('fork', 3, 88),('spoon', 4, 34)]
         rgb_data_algo_2 = [('knife', 1, 65), ('scissor', 2, 68), ('fork', 3, 75),('spoon', 4, 68)]
         rgbd_data_algo_1 =  [('knife', 1, 95), ('scissor', 2, 81), ('fork', 3, 58),('spoon', 4, 84)]
         rgbd_data_algo_2 =  [('knife', 1, 32), ('scissor', 2, 84), ('fork', 3, 65),('spoon', 4, 79)]
-        Final_Data = np.vstack((rgb_data_algo_1,dummy,rgb_data_algo_2,dummy,rgbd_data_algo_1,dummy,rgbd_data_algo_2))
-        combi_data = self.Fuseddata.get_most_confident_data(Final_Data)
+        combi_data = self.Fuseddata.get_most_confident_data((rgb_data_algo_1,dummy,rgb_data_algo_2,dummy,rgbd_data_algo_1,dummy,rgbd_data_algo_2))
         self.assertEqual(len(combi_data),4)
 
 
