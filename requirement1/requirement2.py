@@ -81,23 +81,7 @@ class FusionOfList(Defaults):
         return self.result
 
 if __name__ == '__main__':
-    '''#test case 1
-    red_1 = [('knife',1, 33), ('scissor', 2, 95), ('fork', 3, 99), ('spoon', 4, 80), ('keys', 5, 95)]
-    red_2 = [('knife',1, 92), ('scissor', 2, 65), ('spoon', 3, 33), ('spoon', 4, 98), ('keys', 5, 50)]
-    red_3 = [('knife',1, 55), ('scissor', 2, 95), ('fork', 3, 99), ('spoon', 4, 80), ('keys', 5, 95)]
-    red_4 = [('knife',1, 85), ('scissor', 2, 95), ('fork', 3, 99), ('spoon', 4, 80), ('keys', 5, 95)]'''
 
-    '''#test case 2 :testing uneven length of list
-    red_1 = [('knife',1, 33), ('scissor', 2, 35), ('fork', 3, 85), ('spoon', 4, 55), ('keys', 5, 75)]
-    red_2 = [('knife',1, 92), ('spoon', 3, 33), ('spoon', 4, 5), ('keys', 5, 50)]
-    red_3 = [('knife',1, 55), ('scissor', 2, 82), ('fork', 3, 35), ('spoon', 4, 25), ('keys', 5, 32)]
-    red_4 = [('knife',1, 85), ('keys', 5, 81)]'''
-
-    '''#test case 3 :testing with one of the empty list
-    red_1 = [('knife',1, 33), ('scissor', 2, 35), ('fork', 3, 85), ('spoon', 4, 55), ('keys', 5, 75)]
-    red_2 = []
-    red_3 = [('knife',1, 55), ('scissor', 2, 82), ('fork', 3, 35), ('spoon', 4, 25), ('keys', 5, 32)]
-    red_4 = [('knife',1, 85), ('keys', 5, 81)]'''
 
     #test case 4 :testing with very less sensor data
     red_1 = []
@@ -105,17 +89,6 @@ if __name__ == '__main__':
     red_3 = [('scissor', 2, 82)]
     red_4 = [('knife',1, 85)]
 
-    '''#test case 5 :testing with all list empty length of list
-    red_1 = []
-    red_2 = []
-    red_3 = []
-    red_4 = []'''
-
-    '''#test case 6 :testing with probability limit in range
-    red_1 = [('knife',1, 33), ('scissor', 2, 35), ('fork', 3, 85), ('spoon', 4, 55), ('keys', 5, 75)]
-    red_2 = []
-    red_3 = [('knife',1, 55), ('scissor', 2, 82), ('fork', 3, 105), ('spoon', 4, 25), ('keys', 5, 32)]
-    red_4 = [('knife',1, 85), ('keys', 5, 81)]'''
 
     merger_object = FusionOfList()
     merged_data = [red_1,red_2,red_3,red_4]
