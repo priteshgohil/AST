@@ -1,8 +1,8 @@
 Test,Purpose,Summary
-Test 1,Testing number of Objects,This test will check if the number of objects sensed and post meged are equal or not
-Test 2,Test for Tags,This test check if the predefined tags were being assigned correct or not
-Test 3,Probability check,The test verifies if the probability limit is between 0 and 100
-Test 4,Probability check,The test verifies the intigrity of merger algorithm when probability above 100 is given
-Test 5,Proper operation check,This test verifies if the output after merging is as expected
-Test 6,List mismatch test,This tests verifies If the output is correct when the lists have different contents and different dimensions
-Test 7,Sorting check,This test verifies if the output is sorted or not
+Test 1,test_functionality_testing,This test will check if the number of objects sensed and post meged are equal or not
+Test 2,test_numberof_objects,This test check if the expected number of items were detected
+Test 3,test_with_one_empty_sensor,Check If the output is as expected when one sensor is a defect
+Test 4,test_few_sensor_input,Test if the sensor cannot detect all the objects because of imroper visibility
+Test 5,test_no_input_from_sensor,Check when there is not input from sensors
+Test 6,Probability check,The test verifies if the probability limit is between 0 and 100
+Test 7,Probability check,The test verifies the integrity of merger algorithm when probability above 100 is given
