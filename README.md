@@ -1,19 +1,3 @@
-# AST
-Advance Software Technology
+# Continuous Integration With Travis CI
 
-Programming Language : Python
-
-Data Structure : User defined data structures using class 
-
-Testing frame work : Unittest
-
-Coding standard : PEP8
-
-Design pattern : S.O.L.I.D
-
-Naming convention:
-
-class - uses CapWords Convention
-
-Function and Variable - uses lowercase words separated by underscore
-
+[![Build status](https://travis-ci.org/hmunshi/travis-lab.svg?master)](https://travis-ci.org/hmunshi)
