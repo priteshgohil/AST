@@ -1,6 +1,6 @@
 # Continuous Integration With Travis CI
 
-[![Build status](https://travis-ci.org/hmunshi/travis-lab.svg?master)](https://travis-ci.org/hmunshi)
+[![Build Status](https://travis-ci.com/priteshgohil/AST.svg?branch=developer_2)](https://travis-ci.com/priteshgohil/CI_travis)
 
 ## Test components
 * This given code test_area.py has a function that computers area of a rectangle and tests it using pytest.
