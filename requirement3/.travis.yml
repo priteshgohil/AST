@@ -18,4 +18,4 @@ branches:
     - master
     - developer_2 
 script:
-  - python hello.py 
+  - pytest
