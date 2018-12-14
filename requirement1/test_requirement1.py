@@ -36,9 +36,9 @@ class TestModularity(unittest.TestCase):
             elif object_data[0] == 'scissor':
                 self.assertEqual(object_data[1],2)
             elif object_data[0] == 'fork':
-                self.assertEqual(object_data[1],3)
-            elif object_data[0] == 'spoon':
                 self.assertEqual(object_data[1],4)
+            elif object_data[0] == 'spoon':
+                self.assertEqual(object_data[1],3)
 
     #test the values in porbability are in range of 0 to 100
     def test_probability_in_limits(self):
