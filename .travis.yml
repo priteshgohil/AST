@@ -13,4 +13,5 @@ branches:
 script:
   - pytest
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -F unittests
+  - bash <(curl -s https://codecov.io/gh/priteshgohil/AST?access_token=d597e354-11d0-4d28-aa10-f43155935ab8
+) -F unittests
