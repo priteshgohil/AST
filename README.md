@@ -16,6 +16,13 @@ developing a sub-part of a bigger project. This causes a lot of problems if ther
 
 * In our case we have user travis for CI.
 
+## What is Travis CI and how to make use of it?
+* According to wikipedia[1]: https://en.wikipedia.org/wiki/Travis_CI, "Travis CI is a hosted, distributed continuous integration service used to build and test software projects hosted at GitHub." Breaking the definition down, it's a CI service that can be leveraged to verify the codes which are hosted on GitHub. **NOTE**: Travis CI is **NOT** free for private repositories. Since the repository is public, we can use this service for free.
+
+* How to use travis CI?
+    * Head to [https://travis-ci.org/]("https://travis-ci.org/").
+    * This should be the landing page: ![alt text](./images/travis.png/ "Logo Title Text 1")
+    * Select "Sign in with GitHub" on the top right corner and sign in with your account.
 ## Test components
 * This given code test_area.py has a function that computers area of a rectangle and tests it using pytest.
 * The repository is integrated with travisCI which monitors the correctness of the code.
