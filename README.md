@@ -19,10 +19,32 @@ developing a sub-part of a bigger project. This causes a lot of problems if ther
 ## What is Travis CI and how to make use of it?
 * According to wikipedia[1]: https://en.wikipedia.org/wiki/Travis_CI, "Travis CI is a hosted, distributed continuous integration service used to build and test software projects hosted at GitHub." Breaking the definition down, it's a CI service that can be leveraged to verify the codes which are hosted on GitHub. **NOTE**: Travis CI is **NOT** free for private repositories. Since the repository is public, we can use this service for free.
 
-* How to use travis CI?
+* Basic of travis CI?
     * Head to [https://travis-ci.org/]("https://travis-ci.org/").
     * This should be the landing page: ![alt text](./images/travis.png/ "Logo Title Text 1")
     * Select "Sign in with GitHub" on the top right corner and sign in with your account.
+    * This will show you list of all your public respository and the repositories shared with you.
+    * Select the repository you want to have tests on.
+
+* How to Integrate it with your repository?
+    * Once you have an account, head back to your local and to the repository you want tests on.
+    * Include a file named ".travis.yaml"
+    * These are our contents, the structure of the file remains the same however the contents chages with respect to file names:
+    ```
+    language: python
+    python:
+      - "2.6"
+      - "2.7"
+    branches:
+      only:
+        - master
+        - developer_2 
+    script:
+      - pytest
+
+    after_success:
+      - codecov
+    ```
 ## Test components
 * This given code test_area.py has a function that computers area of a rectangle and tests it using pytest.
 * The repository is integrated with travisCI which monitors the correctness of the code.
