@@ -1,0 +1,34 @@
+1. for the first test input
+sensor1 =[(knife,1, 99%), (scissor, 2, 65%), (spoon, 3, 33%), (spoon, 4, 80%), (keys, 5, 95%)] 	
+sensor2 =[ (keys, 5, 95%), (spoon, 4, 99%),(fork, 3, 99%), (scissor, 2, 95%), (knife,1, 55%)]
+Output = [('knife', 1, 99), ('scissor', 2, 95), ('fork', 3, 99), ('spoon', 4, 99), ('keys', 5, 95)]
+comment: this gives output as expected
+
+2. Input test 2:
+sensor1 =[empty list]
+sensor2 =[empty list]
+Output = [empty list]
+Output: This gives output as expected
+
+3. Input test 3:
+sensor1 =[(knife,1, 99%), (scissor, 2, 65%), (spoon, 3, 33%)]
+sensor2 =[empty list]
+Output =[empty list]
+comment: this gives empty list as output, because we had an asumption in code that if the length of both sensor data is same. mismatch in that will return an empty list.
+
+4. Input test 4:
+sensor1 =[(knife,1, 99%), (scissor, 2, 65%), (spoon, 3, 33%)]
+sensor2 =[(KNIFE,1, 99%), (SCISSOR, 2, 65%), (SPOON, 3, 33%)]
+Output = [('KNIFE', 1, 99), ('SCISSOR', 2, 65), ('SPOON', 3, 33)]
+
+5. Input test 5:
+sensor1 =[(knife,1, 99%), (scissor, 2, 65%)]
+sensor2 =[(fork, 3, 99%), (spoon, 4, 99%)] 
+Output = [('fork', 3, 99), ('spoon', 4, 99)]
+comment: it compares only same length sensor data and comparision is done only between percentage of object.
+
+6. Input test 6:
+sensor1 =[(knife,1, 94%),(knife,1, 69%),(knife,1, 89%)]
+sensor2 =[(knife,1, 99%),(fork, 3, 99%)]
+Output = [empty list]
+comment: same as test 3.
