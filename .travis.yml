@@ -10,6 +10,8 @@ branches:
   only:
     - master
     - working_copy
+install:
+  - pip install -r requirement.txt
 script:
   - pytest
 after_success:
