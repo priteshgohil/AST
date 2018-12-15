@@ -11,8 +11,8 @@ vesly and each pushed commit is verified by an automated build which helps in a 
 developing a sub-part of a bigger project. This causes a lot of problems if there is no validity check at the branch level or repository level.
 
 * Whenever a sub-part of the project is build there are two tests which become essential to determine the functionality of the code:
-** Unit testing - Takes care of individual units (Chuncks of codes with some functionality)
-** Integration testing - Takes care of multiple units communicating with one another.
+    * Unit testing - Takes care of individual units (Chuncks of codes with some functionality)
+    * Integration testing - Takes care of multiple units communicating with one another.
 
 * In our case we have user travis for CI.
 
