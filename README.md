@@ -45,6 +45,18 @@ developing a sub-part of a bigger project. This causes a lot of problems if ther
     after_success:
       - codecov
     ```
+    * Write a test file and name it test__<name>_.py so that pytest can interpret it. More on pytest files [here](https://docs.pytest.org/en/latest/)
+
+* How to Run Travis CI?
+    * Once you are done with writing '.travis.yml' and pushing it, you need to head to [https://travis-ci.org/]("https://travis-ci.org/") again (you have already logged in) and head over to your repository. You might see that it has already started to build your code and if not, there would be a more options button on the right corner, select "Trigger Build" from that: ![alt text](./images/test_travis.png/ "Logo Title Text 1")
+    * Check for errors (if any) from the log that is generates and resolve it.
+
+* Integrating the Status Bagde
+    * Once your tests have passed on travisCI, click on the status: ![alt text](./images/status.png/ "Logo Title Text 1")
+    * It will generate a link that you must copy and paste it into your README.md using:
+    ```
+    [![Build Status](https://travis-ci.com/priteshgohil/AST.svg?branch=developer_2)](https://travis-ci.com/priteshgohil/CI_travis)
+    ```
 ## Test components
 * This given code test_area.py has a function that computers area of a rectangle and tests it using pytest.
 * The repository is integrated with travisCI which monitors the correctness of the code.
