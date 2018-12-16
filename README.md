@@ -1,9 +1,14 @@
-# Continuous Integration With Travis CI
-
 [![Build Status](https://travis-ci.com/priteshgohil/AST.svg?branch=developer_2)](https://travis-ci.com/priteshgohil/CI_travis)
 [![CodeFactor](https://www.codefactor.io/repository/github/priteshgohil/ast/badge/master)](https://www.codefactor.io/repository/github/priteshgohil/ast/overview/master)
-[![codecov](https://codecov.io/gh/priteshgohil/AST/branch/master/graph/badge.svg)](https://codecov.io/gh/priteshgohil/AST)
 
+# AST Project: Object List Merger
+
+The Task of this project is to merge best of the data from 2 sensor algorithm. 1st Sensor is RGB camera used to detect the objects and output of RGB-Camera algorithm is list of tupple of objects.
+2nd sensor is RGBD camrea used for the same purpose. Output of RGBD camera algorithm is list of tuple of objects containing object name, object id and probability of detected object.
+## Getting Started
+The project is divided in weekly requirement. You can start exploring through project progress from directory "requirement1" and so on.
+
+## Continuous Integration With Travis CI
 
 ## What is Continuous Integration?
 * Continuous integration is a software development paradigm in which developers commit their code(s) to their respective branches (or master) recursi
@@ -63,3 +68,11 @@ developing a sub-part of a bigger project. This causes a lot of problems if ther
 * This given code test_area.py has a function that computers area of a rectangle and tests it using pytest.
 * The repository is integrated with travisCI which monitors the correctness of the code.
 * With each new code, we need to write unittest and pytest will continuously monitor for the changes.
+
+## Authors
+* Harsh Munshi [@hmunshi](https://github.com/hmunshi)
+* Pritesh Gohil [@priteshgohil](https://github.com/priteshgohil)
+* Jaswanth Bandlamudi [@jaswanthbjk](https://github.com/jaswanthbjk)
+
+## License
+This project is licensed under the GNU General Public License v3.0
