@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.com/priteshgohil/AST.svg?branch=developer_2)](https://travis-ci.com/priteshgohil/CI_travis)
 [![CodeFactor](https://www.codefactor.io/repository/github/priteshgohil/ast/badge/master)](https://www.codefactor.io/repository/github/priteshgohil/ast/overview/master)
+[![codecov](https://codecov.io/gh/priteshgohil/AST/branch/master/graph/badge.svg)](https://codecov.io/gh/priteshgohil/AST)
 
 # AST Project: Object List Merger
 
