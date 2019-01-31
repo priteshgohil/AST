@@ -36,3 +36,13 @@ It was widely observed by Robert C Martin (AKA Uncle Bob) that object oriented c
 # Design pattern used in the code
 
 In the demo codes, DIP and ISP are highly used. Check out the codes for detained flow.
+
+
+# Types of design patterns
+
+Design patterns can be:
+1. Behavioral
+2. Creational
+3. Dft
+4. Fundamental
+5. Structural 
