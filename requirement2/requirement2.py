@@ -1,6 +1,6 @@
 """
 -------------------------------------------------------------------------------------------------
-Developer: Harsh Munshi and Pritesh Gohil
+Developer: Harsh Munshi and Pritesh Gohil and Jaswanth Bandlamudi
 
 Intent: Object list merger. Merging the contents of the list from readings from various sensors
 
