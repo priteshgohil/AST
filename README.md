@@ -70,10 +70,14 @@ developing a sub-part of a bigger project. This causes a lot of problems if ther
 * The repository is integrated with travisCI which monitors the correctness of the code.
 * With each new code, we need to write unittest and pytest will continuously monitor for the changes.
 
-## Authors
+## Authors / Contributors
 * Harsh Munshi [@hmunshi](https://github.com/hmunshi)
 * Pritesh Gohil [@priteshgohil](https://github.com/priteshgohil)
 * Jaswanth Bandlamudi [@jaswanthbjk](https://github.com/jaswanthbjk)
+   <br />
+<a href="https://github.com/priteshgohil/AST/contributors">
+  <img src="https://contributors-img.firebaseapp.com/image?repo=priteshgohil/AST" />
+</a>
 
 ## License
 This project is licensed under the GNU General Public License v3.0
